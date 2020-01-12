@@ -22,10 +22,10 @@ else
   first_number = array[0]
   i = 1
 end
-new_array = []
+total += 0
 while i < array.length do
-  new_array << yield(first_number, array[i])
+  total += yield(first_number, array[i])
   i += 1
 end
-new_array
+total
 end
