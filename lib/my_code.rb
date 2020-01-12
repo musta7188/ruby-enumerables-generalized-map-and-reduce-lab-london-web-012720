@@ -25,6 +25,7 @@ end
 
 while i < array.length do
   yield(first_number, array[i])
+  i += 1
 end
 
 end
