@@ -22,10 +22,10 @@ else
   first_number = array[0]
   i = 1
 end
-total += 0
+
 while i < array.length do
-  total += yield(first_number, array[i])
+yield(array[i], first_number)
   i += 1
 end
-total
+
 end
