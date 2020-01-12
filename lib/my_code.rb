@@ -13,7 +13,7 @@ def map(array)
 new_array
 end
 
-def reduce(array, starting_point = nil)
+def reduce(array, starting_point=nil)
 
 if starting_point
   first_number = starting_point
