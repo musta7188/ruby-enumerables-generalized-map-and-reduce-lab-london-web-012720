@@ -15,15 +15,16 @@ end
 
 def reduce(array, starting_point = nil)
 
-total = []
-index = 0
-
-while index < array.length do
-
-total << yield(starting_point + array[index])
-
-index += 1
-
+if starting_point
+  first_number = starting_point
+  i = 0
+else
+  first_number = array[0]
+  i = 1
 end
-total
+
+while i < array.length do
+  yield(first_number, array[i])
+end
+
 end
